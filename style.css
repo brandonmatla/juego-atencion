@@ -1,0 +1,49 @@
+/* 👍 LO ESENCIAL */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial;
+  background: url('assets/imagen.png') center / cover no-repeat fixed; /* 🖼️ TU FONDO */
+}
+
+/* 🧼 CANVAS LIMPIO → NO MÁS FONDO NEGRO */
+canvas {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;  /* 🔥 EL PUNCH FINAL */
+}
+
+/* --------- MODAL --------- */
+#modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#modalContent {
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+#startBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
